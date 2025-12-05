@@ -1,0 +1,310 @@
+/* Glassy Navbar - Rhode Skincare style (ultra minimal) */
+.glass-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-navbar--scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(50px) saturate(180%);
+  -webkit-backdrop-filter: blur(50px) saturate(180%);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.03);
+}
+
+.glass-navbar__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.glass-navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--brand-secondary) 0%, var(--brand-primary) 100%);
+  color: var(--text-dark);
+  box-shadow: 0 4px 12px rgba(234, 172, 47, 0.3);
+}
+
+.brand-title {
+  font-weight: 600;
+  font-size: 19px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  letter-spacing: -0.011em;
+}
+
+.brand-tagline {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.glass-navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.glass-navbar__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.glass-navbar__link:hover {
+  color: var(--text-dark);
+  background: rgba(234, 172, 47, 0.1);
+  box-shadow: 0 8px 18px rgba(234, 172, 47, 0.2);
+}
+
+.glass-navbar__link.is-active {
+  background: linear-gradient(135deg, rgba(234, 172, 47, 0.15) 0%, rgba(78, 73, 165, 0.15) 100%);
+  color: var(--text-dark);
+  box-shadow: 0 12px 24px rgba(234, 172, 47, 0.25);
+  border: 1px solid rgba(234, 172, 47, 0.3);
+}
+
+.glass-navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: 1rem;
+}
+
+.glass-navbar__profile {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.75rem !important;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+  text-decoration: none;
+  color: inherit;
+  transform: none !important;
+  scale: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+.glass-navbar__profile:hover {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: var(--btn-primary) !important;
+  box-shadow: 0 4px 12px rgba(137, 137, 43, 0.2) !important;
+  transform: none !important;
+  scale: 1 !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.glass-navbar__profile:active {
+  transform: none !important;
+  scale: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0.35rem 0.75rem !important;
+}
+
+.glass-navbar__profile:focus {
+  transform: none !important;
+  scale: 1 !important;
+  outline: none;
+  width: auto !important;
+  height: auto !important;
+}
+
+.glass-navbar__profile:focus-visible {
+  outline: 2px solid var(--btn-primary);
+  outline-offset: 2px;
+  transform: none !important;
+  scale: 1 !important;
+}
+
+.glass-navbar__profile * {
+  transform: none !important;
+  scale: 1 !important;
+}
+
+.profile-avatar {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: var(--text-dark);
+  flex-shrink: 0;
+  transform: none !important;
+  scale: 1 !important;
+  transition: none !important;
+}
+
+.profile-avatar:hover {
+  transform: none !important;
+  scale: 1 !important;
+}
+
+.profile-avatar:active {
+  transform: none !important;
+  scale: 1 !important;
+}
+
+.profile-name {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+  transform: none !important;
+  scale: 1 !important;
+  transition: none !important;
+}
+
+.ghost-btn,
+.gradient-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.ghost-btn {
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--text-medium);
+  border: 1px solid var(--border-subtle);
+}
+
+.ghost-btn:hover {
+  transform: translateY(-2px);
+  color: var(--text-dark);
+  box-shadow: 0 12px 24px rgba(78, 73, 165, 0.2);
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, var(--brand-secondary) 0%, var(--brand-primary) 100%);
+  color: var(--text-dark);
+  box-shadow: 0 12px 30px rgba(234, 172, 47, 0.4);
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 16px 34px rgba(78, 73, 165, 0.3);
+}
+
+.glass-navbar__burger {
+  display: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 18px rgba(78, 73, 165, 0.2);
+  color: var(--text-dark);
+}
+
+@media (max-width: 1024px) {
+  .glass-navbar__inner {
+    flex-wrap: wrap;
+  }
+
+  .glass-navbar__burger {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .glass-navbar__links,
+  .glass-navbar__actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--border-subtle);
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 14px 40px rgba(78, 73, 165, 0.18);
+    transform-origin: top;
+    transform: scaleY(0.8);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .glass-navbar__links.is-open,
+  .glass-navbar__actions.is-open {
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .glass-navbar__link {
+    justify-content: center;
+  }
+
+  .glass-navbar__actions {
+    gap: 0.6rem;
+  }
+
+  .glass-navbar__profile {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ghost-btn,
+  .gradient-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+

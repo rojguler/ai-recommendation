@@ -1,0 +1,242 @@
+/* Movie Details Page - Apple elegant style */
+
+.movie-details-page {
+  min-height: 100vh;
+  background: #FFFFFF;
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .movie-details-page {
+    padding: 3rem 0;
+  }
+}
+
+/* Movie Poster - Apple style */
+.movie-poster-container {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--bg-white);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.movie-poster-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 24px;
+}
+
+/* Movie Info Section - Apple style */
+.movie-info-section {
+  padding: 2rem 0;
+}
+
+.movie-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.movie-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.movie-badge {
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--bg-white);
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+  letter-spacing: -0.011em;
+}
+
+.movie-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.movie-badge.genre {
+  background: var(--deep-blue);
+  color: white;
+  border: none;
+}
+
+.movie-badge.year {
+  background: var(--orange-wine);
+  color: var(--text-dark);
+  border: none;
+}
+
+/* Description Section */
+.movie-description {
+  font-size: 17px;
+  line-height: 1.47059;
+  color: var(--text-medium);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.011em;
+}
+
+/* Action Buttons - Apple style */
+.movie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.movie-action-btn {
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--bg-white);
+  color: var(--text-dark);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: -0.011em;
+}
+
+.movie-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: var(--bg-white);
+}
+
+.movie-action-btn.primary {
+  background: var(--deep-blue);
+  color: white;
+  border: none;
+}
+
+.movie-action-btn.primary:hover {
+  background: var(--olives);
+  color: var(--text-dark);
+}
+
+.movie-action-btn.favorite {
+  background: var(--orange-wine);
+  color: var(--text-dark);
+  border: none;
+}
+
+.movie-action-btn.favorite:hover {
+  background: var(--deep-blue);
+  color: white;
+}
+
+/* Tags Section */
+.movie-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.movie-tag {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  background: #FFFFFF;
+  color: var(--text-dark);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  letter-spacing: -0.011em;
+}
+
+.movie-tag:hover {
+  background: var(--olives);
+  color: var(--text-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Similar Movies Section */
+.similar-movies-section {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.similar-movies-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  letter-spacing: -0.022em;
+  line-height: 1.1;
+}
+
+.similar-movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card Styles - Apple elegant */
+.movie-detail-card {
+  background: var(--bg-white);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.movie-detail-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .movie-title {
+    font-size: 2rem;
+  }
+  
+  .movie-actions {
+    flex-direction: column;
+  }
+  
+  .movie-action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .similar-movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
+

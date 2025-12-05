@@ -1,0 +1,104 @@
+.App {
+  min-height: 100vh;
+}
+
+/* Home Page - Modern AI-first design styles */
+
+/* Vibe button hover effects */
+.vibe-button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.vibe-button:hover {
+  transform: translateY(-4px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(78, 73, 165, 0.3) !important;
+  background: rgba(78, 73, 165, 0.12) !important;
+  border-color: var(--brand-primary) !important;
+}
+
+/* Mood playlist card hover effects */
+.mood-playlist-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.mood-playlist-card:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Hero section animations */
+.hero-section {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Carousel custom styling */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+  width: 20px;
+  height: 20px;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Home page specific animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced card shadows for modern look */
+.home-page .card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.home-page .card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Footer link hover effects */
+footer .btn-link {
+  transition: all 0.3s ease;
+}
+
+footer .btn-link:hover {
+  transform: translateY(-3px) scale(1.1);
+  color: var(--brand-primary) !important;
+}
+

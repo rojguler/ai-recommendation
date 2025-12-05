@@ -1,0 +1,480 @@
+/* Profile Page - Modern Elegant Design */
+
+.profile-page {
+  min-height: 100vh;
+  background: #FFFFFF;
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .profile-page {
+    padding: 3rem 0;
+  }
+}
+
+/* Profile Header - Modern Card */
+.profile-header-card {
+  background: var(--bg-white);
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--deep-blue) 0%, var(--olives) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 48px;
+  box-shadow: 0 8px 24px rgba(78, 73, 165, 0.3);
+  border: 4px solid var(--bg-white);
+}
+
+.profile-username {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.profile-bio {
+  font-size: 1.1rem;
+  color: var(--text-medium);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.011em;
+  line-height: 1.5;
+}
+
+.profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.profile-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-light);
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+}
+
+.profile-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.profile-genre-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  background: var(--deep-blue);
+  color: white;
+  border: none;
+}
+
+/* Statistics Cards - Modern Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--bg-white);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 24px;
+  color: white;
+}
+
+.stat-icon.watched {
+  background: linear-gradient(135deg, var(--deep-blue) 0%, var(--olives) 100%);
+}
+
+.stat-icon.favorites {
+  background: linear-gradient(135deg, var(--orange-wine) 0%, var(--deep-blue) 100%);
+}
+
+.stat-icon.ai {
+  background: linear-gradient(135deg, var(--olives) 0%, var(--orange-wine) 100%);
+}
+
+.stat-icon.genres {
+  background: linear-gradient(135deg, var(--brine) 0%, var(--olives) 100%);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 15px;
+  color: var(--text-medium);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  font-weight: 500;
+}
+
+/* Tabs - Modern Design */
+.profile-tabs-container {
+  background: var(--bg-white);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+}
+
+.modern-tabs {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.modern-tab {
+  padding: 1rem 1.5rem;
+  border: none;
+  background: transparent;
+  color: var(--text-medium);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modern-tab:hover {
+  color: var(--text-dark);
+  background: rgba(78, 73, 165, 0.05);
+}
+
+.modern-tab.active {
+  color: var(--deep-blue);
+  border-bottom-color: var(--deep-blue);
+  font-weight: 600;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.empty-state-icon {
+  font-size: 80px;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+.empty-state-text {
+  font-size: 18px;
+  color: var(--text-medium);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  margin-bottom: 2rem;
+}
+
+/* Genre Selection - Modern */
+.genres-section {
+  background: var(--bg-white);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.genres-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.genres-header-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--deep-blue) 0%, var(--olives) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.genres-title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.018em;
+}
+
+.genres-subtitle {
+  font-size: 15px;
+  color: var(--text-light);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+}
+
+.genres-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.genre-chip {
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background: var(--bg-white);
+  color: var(--text-dark);
+}
+
+.genre-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.genre-chip.selected {
+  background: var(--deep-blue);
+  color: white;
+  border-color: var(--deep-blue);
+  box-shadow: 0 4px 12px rgba(78, 73, 165, 0.3);
+}
+
+.genre-chip.selected:hover {
+  background: var(--olives);
+  border-color: var(--olives);
+}
+
+/* Save Button */
+.save-button {
+  padding: 0.9rem 2.5rem;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  background: var(--deep-blue);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.save-button:hover {
+  background: var(--olives);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(78, 73, 165, 0.4);
+}
+
+/* Movie Grid */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.movie-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: visible;
+  transition: all 0.3s ease;
+}
+
+.movie-item:hover {
+  transform: translateY(-4px);
+}
+
+.movie-item:hover .movie-poster {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.movie-item .movie-delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.movie-item:hover .movie-delete-btn {
+  opacity: 1;
+}
+
+.movie-item .movie-delete-btn:hover {
+  background: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.movie-poster {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.movie-title {
+  margin-top: 0.75rem;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.movie-meta {
+  font-size: 13px;
+  color: var(--text-light);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* AI History Card */
+.ai-history-card {
+  background: var(--bg-white);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.ai-history-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.ai-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.ai-history-prompt {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.ai-history-date {
+  font-size: 13px;
+  color: var(--text-light);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', sans-serif;
+}
+
+.ai-history-movies {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.ai-history-movie {
+  width: 80px;
+  aspect-ratio: 2/3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-header-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+  }
+
+  .profile-username {
+    font-size: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
+
+

@@ -1,0 +1,337 @@
+/* Favorites Page - Pastel Cream White Theme */
+
+.favorites-page {
+  min-height: 100vh;
+  background: #FFFFFF;
+  padding: 2rem 0;
+}
+
+/* Header Styles with Soft Gradient */
+.favorites-header {
+  position: relative;
+  padding: 3rem 0 2rem;
+  background: #FFFFFF;
+  border-radius: 0 0 2rem 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Heart Container with Soft Glow */
+.heart-container {
+  position: relative;
+  display: inline-block;
+}
+
+.heart-glow {
+  animation: heart-beat-soft 2s ease-in-out infinite;
+  filter: drop-shadow(0 4px 12px rgba(234, 172, 47, 0.3));
+}
+
+@keyframes heart-beat-soft {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 4px 12px rgba(234, 172, 47, 0.25));
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 8px 20px rgba(234, 172, 47, 0.35));
+  }
+}
+
+.heart-empty {
+  opacity: 0.3;
+  color: var(--brand-secondary);
+}
+
+/* Insights Card - Pastel Gradient */
+.insights-card {
+  background: linear-gradient(135deg, var(--brand-secondary) 0%, var(--cream) 100%);
+  border: none !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+.insight-item {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.insight-item:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Filter Badge - Soft Pastel */
+.filter-badge {
+  background: rgba(234, 172, 47, 0.15);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-medium);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.filter-badge:hover {
+  background: rgba(234, 172, 47, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(234, 172, 47, 0.2);
+}
+
+.filter-badge.active,
+.badge-primary {
+  background: var(--brand-primary) !important;
+  border-color: var(--brand-primary) !important;
+  color: var(--text-dark) !important;
+}
+
+.badge-warning {
+  background: var(--brand-secondary) !important;
+  border-color: var(--brand-secondary) !important;
+  color: var(--text-dark) !important;
+}
+
+.badge-dark {
+  background: var(--border-subtle) !important;
+  border-color: var(--border-subtle) !important;
+  color: var(--text-medium) !important;
+}
+
+/* AI Actions Card - Pastel Gradient */
+.ai-actions-card {
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+  border: none !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+.ai-action-btn {
+  background: var(--bg-white);
+  color: var(--text-dark);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 0.8rem 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+}
+
+.ai-action-btn:hover {
+  background: var(--bg-white);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: var(--brand-primary);
+}
+
+/* Favorite Movie Card - Clean White */
+.favorite-movie-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: var(--bg-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.favorite-movie-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Remove Favorite Button - Soft Pink */
+.remove-favorite-btn {
+  opacity: 0;
+  transition: all 0.3s ease;
+  background: var(--brand-secondary) !important;
+  border: 2px solid var(--brand-secondary) !important;
+  color: var(--text-dark) !important;
+  box-shadow: 0 4px 12px rgba(234, 172, 47, 0.3);
+}
+
+.favorite-movie-card:hover .remove-favorite-btn {
+  opacity: 1;
+}
+
+.remove-favorite-btn:hover {
+  transform: scale(1.1);
+  background: var(--brand-secondary) !important;
+  box-shadow: 0 6px 20px rgba(234, 172, 47, 0.4);
+}
+
+/* Search Input - Cream White */
+.form-control {
+  background: var(--bg-white);
+  border: 2px solid var(--border-subtle);
+  color: var(--text-dark);
+  border-radius: 16px;
+}
+
+.form-control:focus {
+  background: var(--bg-white);
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(78, 73, 165, 0.2);
+  color: var(--text-dark);
+}
+
+.form-control::placeholder {
+  color: var(--text-muted);
+}
+
+/* Glassmorphism Card - Soft */
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Dropdown - Pastel */
+.dropdown-menu {
+  background: var(--bg-white);
+  border: 2px solid var(--border-subtle);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown-item {
+  color: var(--text-dark);
+  transition: all 0.2s ease;
+  border-radius: 12px;
+  margin: 0.25rem;
+}
+
+.dropdown-item:hover {
+  background: var(--brand-primary);
+  color: var(--text-dark);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .favorites-page {
+    padding: 1rem 0;
+  }
+  
+  .insight-item {
+    margin-bottom: 1rem;
+  }
+  
+  .ai-action-btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .favorite-movie-card {
+    margin-bottom: 2rem;
+  }
+  
+  .remove-favorite-btn {
+    opacity: 1;
+  }
+}
+
+/* Alert - Pastel */
+.alert {
+  border-radius: 16px;
+  border: none;
+  background: var(--bg-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.alert-success {
+  background: var(--brand-earth);
+  color: var(--text-dark);
+}
+
+.alert-danger {
+  background: var(--brand-secondary);
+  color: var(--text-dark);
+}
+
+.alert-warning {
+  background: var(--brand-secondary);
+  color: var(--text-dark);
+}
+
+.alert-info {
+  background: var(--brand-primary);
+  color: var(--text-dark);
+}
+
+/* Button Styles */
+.btn {
+  border-radius: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--brand-primary);
+  color: var(--text-dark);
+}
+
+.btn-primary:hover {
+  background: var(--brand-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(78, 73, 165, 0.3);
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--brand-primary);
+  color: var(--text-dark);
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background: var(--brand-primary);
+  color: var(--text-dark);
+  border-color: var(--brand-primary);
+}
+
+.btn-outline-danger {
+  border: 2px solid var(--brand-secondary);
+  color: var(--text-dark);
+  background: transparent;
+}
+
+.btn-outline-danger:hover {
+  background: var(--brand-secondary);
+  color: var(--text-dark);
+}
+
+/* Text Colors */
+.text-white {
+  color: var(--text-dark) !important;
+}
+
+.text-white-50 {
+  color: var(--text-light) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Spinner */
+.spinner-border {
+  border-color: var(--brand-primary);
+  border-right-color: transparent;
+}
+
+/* Card */
+.card {
+  background: var(--bg-white);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
