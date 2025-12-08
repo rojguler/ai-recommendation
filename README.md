@@ -7,6 +7,57 @@ A modern full-stack web application that provides personalized movie recommendat
 ![Tech Stack](https://img.shields.io/badge/MySQL-8.0-orange)
 ![Tech Stack](https://img.shields.io/badge/AI-Gemini-purple)
 
+## 📸 Screenshots
+
+### Homepage
+![Ana Sayfa](screenshots/homepage.png)
+
+*Modern ve temiz tasarıma sahip ana sayfa - AI destekli film önerileri, mood kategorileri ve kişiselleştirilmiş içerikler*
+
+Ana sayfa şu özellikleri içerir:
+- **Hero Banner**: Öne çıkan filmler için büyük banner alanı
+- **Mood Tags**: Filmleri mood/genre'a göre filtreleme
+- **AI Selections**: Günlük AI tarafından seçilmiş filmler
+- **Mood-Based Categories**: Cozy Night, Sad Girl Cinema, Chaotic Energy gibi kategoriler
+- **Personalized Recommendations**: Kullanıcıya özel film önerileri
+
+### AI Recommendations (AI Picks)
+![AI Öneriler Sayfası](screenshots/recommendations.png)
+
+*Gemini AI ile kişiselleştirilmiş film önerileri sayfası - kullanıcı tercihlerine göre özel öneriler*
+
+AI Picks sayfası şu özellikleri içerir:
+- **Personalized Recommendations**: Profil tercihlerine göre öneriler
+- **Recommendation Modes**: "Your Taste", "Discover New", "AI Surprise Me" seçenekleri
+- **Profile-Based Suggestions**: Favori türler ve beğenilen filmlere göre öneriler
+- **Modern UI**: Gradient arka planlar ve modern tasarım
+
+### Login & Register
+![Giriş Sayfası](screenshots/login.png)
+![Kayıt Sayfası](screenshots/register.png)
+
+*Güvenli kimlik doğrulama sistemi - JWT tabanlı giriş ve kayıt sayfaları*
+
+### Profile
+![Profil Sayfası](screenshots/profile.png)
+
+*Kullanıcı profil yönetimi - favori türler ve tercih ayarları*
+
+### Favorites
+![Favoriler Sayfası](screenshots/favorites.png)
+
+*Favori filmlerinizi kaydedin ve yönetin - kişisel film koleksiyonunuz*
+
+### Discover & Search
+![Keşfet Sayfası](screenshots/discover.png)
+
+*Film keşfetme ve arama özellikleri - AI destekli semantik arama*
+
+### Movie Details
+![Film Detay Sayfası](screenshots/movie-details.png)
+
+*Detaylı film bilgileri - AI tarafından oluşturulmuş özetler ve tagline'lar*
+
 ## ✨ Key Features
 
 - **🤖 AI-Powered Recommendations**: Personalized movie suggestions using Google Gemini AI
