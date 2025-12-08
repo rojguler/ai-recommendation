@@ -10,53 +10,53 @@ A modern full-stack web application that provides personalized movie recommendat
 ## 📸 Screenshots
 
 ### Homepage
-![Ana Sayfa](screenshots/homepage.png)
+![Homepage](screenshots/homepage.png)
 
-*Modern ve temiz tasarıma sahip ana sayfa - AI destekli film önerileri, mood kategorileri ve kişiselleştirilmiş içerikler*
+*Modern and clean homepage design - AI-powered movie recommendations, mood categories, and personalized content*
 
-Ana sayfa şu özellikleri içerir:
-- **Hero Banner**: Öne çıkan filmler için büyük banner alanı
-- **Mood Tags**: Filmleri mood/genre'a göre filtreleme
-- **AI Selections**: Günlük AI tarafından seçilmiş filmler
-- **Mood-Based Categories**: Cozy Night, Sad Girl Cinema, Chaotic Energy gibi kategoriler
-- **Personalized Recommendations**: Kullanıcıya özel film önerileri
+The homepage includes the following features:
+- **Hero Banner**: Large banner area for featured movies
+- **Mood Tags**: Filter movies by mood/genre
+- **AI Selections**: Daily AI-selected movies
+- **Mood-Based Categories**: Categories like Cozy Night, Sad Girl Cinema, Chaotic Energy
+- **Personalized Recommendations**: Personalized movie recommendations for users
 
 ### AI Recommendations (AI Picks)
-![AI Öneriler Sayfası](screenshots/recommendations.png)
+![AI Recommendations Page](screenshots/recommendations.png)
 
-*Gemini AI ile kişiselleştirilmiş film önerileri sayfası - kullanıcı tercihlerine göre özel öneriler*
+*Personalized movie recommendations page powered by Gemini AI - custom recommendations based on user preferences*
 
-AI Picks sayfası şu özellikleri içerir:
-- **Personalized Recommendations**: Profil tercihlerine göre öneriler
-- **Recommendation Modes**: "Your Taste", "Discover New", "AI Surprise Me" seçenekleri
-- **Profile-Based Suggestions**: Favori türler ve beğenilen filmlere göre öneriler
-- **Modern UI**: Gradient arka planlar ve modern tasarım
+The AI Picks page includes the following features:
+- **Personalized Recommendations**: Recommendations based on profile preferences
+- **Recommendation Modes**: "Your Taste", "Discover New", "AI Surprise Me" options
+- **Profile-Based Suggestions**: Recommendations based on favorite genres and liked movies
+- **Modern UI**: Gradient backgrounds and modern design
 
 ### Login & Register
-![Giriş Sayfası](screenshots/login.png)
-![Kayıt Sayfası](screenshots/register.png)
+![Login Page](screenshots/login.png)
+![Register Page](screenshots/register.png)
 
-*Güvenli kimlik doğrulama sistemi - JWT tabanlı giriş ve kayıt sayfaları*
+*Secure authentication system - JWT-based login and registration pages*
 
 ### Profile
-![Profil Sayfası](screenshots/profile.png)
+![Profile Page](screenshots/profile.png)
 
-*Kullanıcı profil yönetimi - favori türler ve tercih ayarları*
+*User profile management - favorite genres and preference settings*
 
 ### Favorites
-![Favoriler Sayfası](screenshots/favorites.png)
+![Favorites Page](screenshots/favorites.png)
 
-*Favori filmlerinizi kaydedin ve yönetin - kişisel film koleksiyonunuz*
+*Save and manage your favorite movies - your personal movie collection*
 
 ### Discover & Search
-![Keşfet Sayfası](screenshots/discover.png)
+![Discover Page](screenshots/discover.png)
 
-*Film keşfetme ve arama özellikleri - AI destekli semantik arama*
+*Movie discovery and search features - AI-powered semantic search*
 
 ### Movie Details
-![Film Detay Sayfası](screenshots/movie-details.png)
+![Movie Details Page](screenshots/movie-details.png)
 
-*Detaylı film bilgileri - AI tarafından oluşturulmuş özetler ve tagline'lar*
+*Comprehensive movie information - AI-generated summaries and taglines*
 
 ## ✨ Key Features
 
