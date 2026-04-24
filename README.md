@@ -2,10 +2,28 @@
 
 A modern full-stack web application that provides personalized movie recommendations using Google Gemini AI. Built with React, Node.js, and MySQL.
 
-![Tech Stack](https://img.shields.io/badge/React-18.2-blue)
-![Tech Stack](https://img.shields.io/badge/Node.js-Express-green)
-![Tech Stack](https://img.shields.io/badge/MySQL-8.0-orange)
-![Tech Stack](https://img.shields.io/badge/AI-Gemini-purple)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![React](https://img.shields.io/badge/Frontend-React%2018-blue?logo=react)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=nodedotjs)](https://nodejs.org/)
+[![MySQL](https://img.shields.io/badge/Database-MySQL-orange?logo=mysql)](https://www.mysql.com/)
+[![AI](https://img.shields.io/badge/AI-Google%20Gemini-purple?logo=google-gemini)](https://ai.google.dev/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+---
+
+## 📖 Table of Contents
+
+- [📸 Screenshots](#-screenshots)
+- [✨ Key Features](#-key_features)
+- [📚 Documentation](#-documentation)
+- [🛠️ Tech Stack](#tech-stack)
+- [🚀 Setup Instructions](#setup-instructions)
+- [🔌 API Endpoints](#api-endpoints)
+- [📊 Database Schema](#database-schema)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+
+---
 
 ## 📸 Screenshots
 
