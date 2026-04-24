@@ -71,6 +71,14 @@ The AI Picks page includes the following features:
 - **📊 Movie Details**: Comprehensive movie information with AI-generated summaries
 - **⚡ Performance**: Redis caching for optimized performance
 
+## 📚 Documentation
+
+For more detailed information about the project, please refer to the following documents in the [docs](./docs) folder:
+
+- [**Introduction Guide (TR)**](./docs/GIRIS_KILAVUZU.md) - Project introduction and overview in Turkish.
+- [**Technical Features**](./docs/TECHNICAL_FEATURES.md) - Deep dive into the technical implementation.
+- [**Project Status Report**](./docs/PROJECT_STATUS_REPORT.md) - Current status and development progress.
+
 ## Tech Stack
 
 ### Frontend
